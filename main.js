@@ -1,6 +1,8 @@
-const wrapper = document.querySelector(".wrapper"),
-qrInput = wrapper.querySelector('.form input'),
-qrImg = wrapper.querySelector('.qr-code img')
+const wrapper = document.querySelector(".wrapper");
+const signature = document.querySelector(".signature");
+qrInput = wrapper.querySelector('.form input');
+qrImg = wrapper.querySelector('.qr-code img');
+sigText = signature.querySelector('h1')
 generateBtn = wrapper.querySelector('.form button');
 
 generateBtn.addEventListener('click', () => {
@@ -19,4 +21,8 @@ qrInput.addEventListener('keyup',  () => {
   if(!qrInput.value) {
     wrapper.classList,remove('active');
   }
+})
+
+sigText.addEventListener('click', () => {
+  window.open("https://github.com/Wernekinho")
 })
